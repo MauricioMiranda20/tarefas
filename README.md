@@ -23,7 +23,7 @@ Antes de executar a aplicação, certifique-se de ter o seguinte instalado:
 - **MySQL** (para o banco de dados)
 
 ## Dependencia do spring boot initializr
-- **spring web
-- **spring date jpa
-- **spring boot devtools
-- **mysql driver 
+- **spring web**
+- **spring date jpa**
+- **spring boot devtools**
+- **mysql driver**
