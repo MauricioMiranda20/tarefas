@@ -22,29 +22,29 @@ public class TaskController {
 	@Autowired
 	private TaskService taskService;
 	
-	@PostMapping
+	@PostMapping("POST /api/tasks")
 	public Task createTask(@RequestBody Task task) {
 		return taskService.createTask(task);
 	}
 	
-	@GetMapping
+	@GetMapping("GET /api/task")
 	public List<Task> getAllTasks(){
 		return taskService.getAllTasks();
 	}
 	
-	@GetMapping("/{id}")
+	@GetMapping("GET /api/tasks/{id}")
 	public ResponseEntity<Task> getTaskById(@PathVariable Long id){
 		return taskService.getTaskById(id)
 				.map(ResponseEntity::ok)
 				.orElse(ResponseEntity.notFound().build());
 	}
 	
-	@PutMapping("/{id}")
+	@PutMapping("PUT /api/tasks/{id}")
 	public ResponseEntity<Task> updateTask(@PathVariable Long id,@RequestBody Task details){
 		return ResponseEntity.ok(taskService.updatetask(id, details));
 	}
 	
-	@DeleteMapping("/{id}")
+	@DeleteMapping("DELETE /api/tasks/{id}")
 	public ResponseEntity<Void> deleteTask(@PathVariable Long id){
 		taskService.deleteTask(id);
 		return ResponseEntity.noContent().build();
