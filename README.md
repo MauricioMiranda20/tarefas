@@ -1,11 +1,10 @@
 # To-Do List Application
 
-Este é um projeto de aplicação de lista de tarefas (To-Do List) desenvolvido com Spring Boot e MySQL.
+Este é um projeto de aplicação de lista de tarefas (To-Do List) desenvolvido com Spring Boot.
 
 ## Tecnologias Utilizadas
 
 - **Spring Boot** - Framework Java para desenvolvimento de aplicações web.
-- **MySQL** - Sistema de gerenciamento de banco de dados relacional.
 
 ## Funcionalidades
 
@@ -22,3 +21,9 @@ Antes de executar a aplicação, certifique-se de ter o seguinte instalado:
 - **Java 22** ou superior
 - **Maven** (para gerenciamento de dependências e construção do projeto)
 - **MySQL** (para o banco de dados)
+
+## Dependencia do spring boot initializr
+- **spring web
+- **spring date jpa
+- **spring boot devtools
+- **mysql driver 
