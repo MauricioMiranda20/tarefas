@@ -22,7 +22,7 @@ Antes de executar a aplicação, certifique-se de ter o seguinte instalado:
 - **Maven** (para gerenciamento de dependências e construção do projeto)
 - **MySQL** (para o banco de dados)
 
-## Dependéncias do spring boot initializr
+## Dependéncias do spring initializr
 - **spring web**
 - **spring date jpa**
 - **spring boot devtools**
